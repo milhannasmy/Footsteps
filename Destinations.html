@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!------------------------ Code of Footsteps | Destination ------------------------>
+	
+  <title>Footsteps-Destinations</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+<!---------------------- Footsteps Destinations | CSS Style ----------------------->
+	
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+  
+	  
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+   .nav-tabs li a {
+    color: #777;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff ;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+ 
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .modalstyle{
+		color: #000000;
+	    font-style: normal;
+		
+	}
+  </style>
+</head>
+	
+<!---------------------- Footsteps Destinations | HTML Code ----------------------->
+	
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Footsteps.html">FOOTSTEPS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    
+    </div>
+  </div>
+</nav>
+
+
+<!-- Container (Destinations Section) -->
+<div id="destinations" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">TRAVEL DESTINATIONS</h3>
+
+	<br>
+ 
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Sigiriya-Cropped.jpg" alt="Sigiriya" width="400" height="300">
+			<p><strong>Sigiriya</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal1">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Worlds End-Cropped.jpg" alt="World's End" width="400" height="300">
+          <p><strong>World's End</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal2">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Elephant-Final.jpg" alt="Yala National Park" width="400" height="300">
+          <p><strong>Yala National Park</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal3">Check</button>
+        </div>
+      </div>
+		
+		
+    </div>
+	  
+	<div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Galle Face-Cropped.jpg" alt="Galle Face Green" width="400" height="300">
+			<p><strong>Galle Face Green</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal4">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Sinharaja-Cropped'.jpg" alt="Sinharaja Forest Reserve" width="400" height="300">
+          <p><strong>Sinharaja Forest Reserve</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal5">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/St Anthony's Church-Cropped.jpg" alt="St Anthony's Church" width="400" height="300">
+          <p><strong>St Anthony's Church</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal6">Check</button>
+        </div>
+      </div>
+		
+   </div>
+	  
+	  	  
+	<div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Bahiravokanda Vihara Buddha Statue-Cropped.jpg" alt="Bahiravokanda Vihara Buddha Statue" width="400" height="300">
+			<p><strong>Bahiravokanda Vihara Buddha Statue</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal7">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/The Temple of the Sacred Tooth Relic-Cropped.jpg" alt="The Temple of the Sacred Tooth Relic" width="400" height="300">
+          <p><strong>The Temple of the Sacred Tooth Relic</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal8">Check</button>
+        </div>
+      </div>
+		
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Bentota Beach-Cropped.jpg" alt="Bentota Beach" width="400" height="300">
+          <p><strong>Bentota Beach</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal9">Check</button>
+        </div>
+      </div>
+		
+   </div>
+	  
+	<div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/St. Clairs Falls-Cropped.jpg" alt="St. Clairs Falls" width="400" height="300">
+			<p><strong>St. Clairs Falls</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal10">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/International Buddhist Museum-Cropped.jpg" alt=" International Buddhist Museum" width="400" height="300">
+          <p><strong>International Buddhist Museum</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal11">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Mahiyanganaya Sorabora Lake-Cropped.jpg" alt="Mahiyanganaya Sorabora Lake" width="400" height="300">
+          <p><strong>Mahiyanganaya Sorabora Lake</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal12">Check</button>
+        </div>
+      </div>
+   </div>
+	  
+	 <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Ruwanwelisaya-Cropped.jpg" alt="Ruwanwelisaya" width="400" height="300">
+			<p><strong>Ruwanwelisaya</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal13">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Polonnaruwa Sacred City-Cropped.jfif" alt="Polonnaruwa Sacred City" width="400" height="300">
+          <p><strong>Polonnaruwa Sacred City</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal14">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Pinnewala Elephant Orphanage-Cropped.jpg" alt="Pinnewala Elephant Orphanage" width="400" height="300">
+          <p><strong>Pinnewala Elephant Orphanage</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal15">Check</button>
+        </div>
+      </div>
+   </div>
+	  
+   <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Anuradhapura-Cropped.jpg" alt="Anuradhapura" width="400" height="300">
+			<p><strong>Anuradhapura</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal16">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Galle Fort-Cropped.jpg" alt="Galle Fort" width="400" height="300">
+          <p><strong>Galle Fort</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal17">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Horton Plains National Park-Cropped.png" alt="Horton Plains National Park" width="400" height="300">
+          <p><strong>Horton Plains National Park</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal18">Check</button>
+        </div>
+      </div>
+  </div>
+	  
+	     <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Dehiwala Zoo-Cropped.jpg" alt="Dehiwala Zoo" width="400" height="300">
+			<p><strong>Dehiwala Zoo</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal19">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Bambarakanda Falls-Cropped.jpg" alt="Bambarakanda Falls" width="400" height="300">
+          <p><strong>Bambarakanda Falls</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal20">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Stroll Dutch Reformed Church-Cropped.jpg" alt="Stroll Dutch Reformed Church" width="400" height="300">
+          <p><strong>Stroll Dutch Reformed Church</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal21">Check</button>
+        </div>
+      </div>
+  </div>
+	  
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Attidiya Bird Sanctuary-Cropped.jpg" alt="Attidiya Bird Sanctuary" width="400" height="300">
+			<p><strong>Attidiya Bird Sanctuary</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal22">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Udawalawe National Park-Cropped.jpg" alt="Udawalawe National Park" width="400" height="300">
+          <p><strong>Udawalawe National Park</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal23">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Gangaramaya Temple-Cropped.jpg" alt="Gangaramaya Temple" width="400" height="300">
+          <p><strong>Gangaramaya Temple</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal24">Check</button>
+        </div>
+      </div>
+  </div>
+	  
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/National Museum of Colombo-Cropped.jpg" alt="National Museum of Colombo" width="400" height="300">
+			<p><strong>National Museum of Colombo</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal25">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Sri Lanka Cricket Museum-Cropped.jpg" alt="Sri Lanka Cricket Museum" width="400" height="300">
+          <p><strong>Sri Lanka Cricket Museum</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal26">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Viharamahadevi Park-Cropped.jpg" alt="Viharamahadevi Park" width="400" height="300">
+          <p><strong>Viharamahadevi Park</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal27">Check</button>
+        </div>
+      </div>
+  </div>
+	  
+	  
+  <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Independence Memorial Hall-Cropped.jpg" alt="Independence Memorial Hall" width="400" height="300">
+			<p><strong>Independence Memorial Hall</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal28">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Kandy Lake-Cropped.jpg" alt="Kandy Lake" width="400" height="300">
+          <p><strong>Kandy Lake</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal29">Check</button>
+        </div>
+      </div>
+		
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Red Mosque-Cropped.jpg" alt="Red Mosque" width="400" height="300">
+          <p><strong>Red Mosque</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal30">Check</button>
+        </div>
+      </div>
+  </div>
+	  
+	  
+  </div>
+
+	  <!------------------- Modals -------------------->
+  
+  <!-- Modal 1 -->
+  <div class="modal fade 1" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 1 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Sigiriya</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			A visit to this place will show you an 1600 years old Sigiriya Fortress which was built by King Kasyapa. This massive compound is protected by two moats and three ramparts. It is once known to be the private residence of King Kasyapa and also one of the best places to visit in Sri Lanka.If you are interested in ancient places, this is one of the best tourist places to visit in Sri Lanka.<br>
+			<br>
+			Location: 31 min (16.8 km) from Sri Lanka via Inamaluwa<br>
+			<br>
+			Timings: Opens daily from 7 AM to 5:30 PM.<br>
+			<br>
+			Best time to visit: This area will be early in the morning or late in the afternoon.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 2 -->
+  <div class="modal fade 2" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 2 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>World's End</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			One of the most jaw-dropping experience you can ever have in Sri Lanka is the World’s End on the Horton Plains. Enjoy a tuk-tuk ride to the Horton plains from Nuwara Eliya and it is among the best tourist places to visit in Sri Lanka.<br>
+			You can see animals such as leopards and deer. Experience the amazing flora and fauna which will be an amazing experience.<br>
+			<br>
+			Location: The nearest station is in Nanu Oya which is about 8km.<br>
+			<br>
+			Highlights: Baker’s fall which is truly spectacular<br>
+			<br>
+			Best Time to Visit: The best time to reach there is before 10:00 AM before it gets too cloudy because you will not be able to see anything after that.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 3 -->
+  <div class="modal fade 3" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 3 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Yala National Park</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Spotting a leopard prowling in the Park of Yala is quite an ordinary spectacle. Witness the untamed world of nature in the Yala National Park and quench your eagerness to explore and learn more about wildlife. Yala National Park is located in the South-East part of Sri Lanka.<br>
+				<br>
+				Amidst both nature and wildlife, you will also find some faint cultural ruins which give the travellers a deeper insight about the earlier civilization. the Yala National Park lies in the south-eastern part of Sri Lanka closely hugging the Indian Ocean. It is amongst the famous Sri Lanka tourist places that attracts a lot of tourists every year.<br>
+				<br>
+				Highlights: A safari to this natural park will surely leave you jaw drop as you will be able to witness Sri Lankan Sloth Bear, Leopards, and Elephants in big numbers.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+<!-- Modal 4 -->
+  <div class="modal fade 4" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 4 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Galle Face Green</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Avid Joggers, walkers and kite flyers for whom honking horns are a big turn off. We have Galle Face Green, a beautiful stretch of lawn facing the sea right in the very heart of Columbo. You will breathe, the way a person from a crowded city would love to. This place is bustling with life all the time. It is one of the best places to visit in Sri Lanka.<br>
+				<br>
+				For people who don’t mind putting on that extra calorie can try some street side food from the local hawkers, who gather there to fill up your stomach with some tasty food.The local food is too hard to resist for food lovers who would love to tickle their palate with the same<br>
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 5 -->
+  <div class="modal fade 5" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 5 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Sinharaja Forest Reserve</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Declared as a World Heritage Site by UNESCO, Sinharaja Forest Reserve (kingdom of the lion), is a paradise for nature and wildlife lovers. It is home to a vast number of endemic species of birds and mammals of Sri Lanka. About 95 per cent of Sri Lankan endemic birds and more than 50 per cent of endemic mammals are known to have their habitats in this Forest Reserve.<br>
+			Year round, the forest is covered by plenty of rain clouds. It is one of the famous places to visit in Galle. You can experience the leisurely pace of wildlife and the splendour of dense and copious evergreen rainforests. <br>
+			<br>
+			Location: Sinharaja Forest Reserve, Southern Province<br>
+			<br>
+			Timings: Opens daily from 6:30 AM to 6 PM<br>
+			<br>
+			Price: Approximate price ranges from INR 260 to INR460 (664 LKR to 1160 LKR)
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 6 -->
+  <div class="modal fade 6" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 6 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>St Anthony's Church</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				St. Anthony’s Church is one of the most-visited places in the Srilanka. During weekends, Tuesdays and on major festivals, the church is flocked by devotees who come here from different parts of the world, as the place is believed to produce miracles. The church was constructed as a very small mud structure many years ago and it was made bigger during 1806.<br>
+				<br>
+				Location: The church is located at Kochchikade.<br>
+				<br>
+				Highlights:The main altar holds the statue of St. Anthony, which was brought all the way from Goa, in a safe bullet-proof glass container. Tuesdays are considered too special days here and there are special masses and benediction services in Tamil, English, and Sinhala all through the day. On week days, the church conducts Tamil and Sinhala Mass. During weekends, the church conducts Tamil, English and Sinhala masses.<br>
+				<br>
+				Timings: Open all through the day.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	<!-- Modal 7 -->
+  <div class="modal fade 7" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 7 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Bahiravokanda Vihara Buddha Statue</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				This place showcases a breathtaking view of the entire Kandy town. The 88ft high statue of Buddha is something one should not miss while in Kandy. The white statue can be seen from any part of the Peradeniya city as it is strategically located on top of the Bahirava Kanda (devil’s) hill.<br>
+				<br>
+				You can either climb the steps to reach the viewpoint or else hire a tuk-tuk to do so. The beauty of the statue doubles during the night when it is lit by lamps. Best hour to visit this place is early morning or after sunset. This place should be definitely there on your list of places to visit in Sri Lanka.<br>
+				<br>
+				Highlights: Panoramic view of the city down, including a view of the lake, tea factory, and football stadium; gallery that has artefacts based on the life of Buddha; a souvenir shop which has lovely goodies at a much friendlier price<br>
+				<br>
+				Location: Peradeniya, Kandy.<br>
+				<br>
+				Price: Approximate price starts from 200 LKR.<br>
+				<br>
+				Timings: Open 24 hours a day.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 8 -->
+  <div class="modal fade 8" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 8 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>The Temple of the Sacred Tooth Relic</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Nestled close to the Udawattakele Sanctuary, The Temple of the Sacred Tooth Relic is one of the most important shrines of Sri Lanka. Also named as Dalada Maligawa, this temple is based in the royal palace of the Kingdom of Kandy.<br>
+			<br>
+			Housing the legendary Budda tooth, the temple is a World Heritage site though very little are the remnants of the original temple built around 1600. Amazing ornamentation with golden fence and extravagant Canadian architecture makes it a blissful sight for the visitors.<br>
+			<br>
+			Dedicated monks unanimously chant the prayers of Malwatte and Aegirine, three times every day, during dawn, noontime and evening at the inner temple. Every Wednesday a holy symbolic bath of the Relic is done is fragrant water and that water is distributed among the visitors known to have healing powers.<br>
+			<br>
+			Location: Royal Palace, Kandy<br>
+			<br>
+			Timings: 5:30 AM to 8:00 PM
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 9 -->
+  <div class="modal fade 9" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 9 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Bentota Beach</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				An extraordinary experience amidst an ordinary setup lies 65 kilometres from Colombo and is named Bentota beach. Soak yourself in the ordinary golden sand while enjoying the marvellous sound of the mighty Indian Ocean crashing against the shores.<br>
+				<br>
+				The mesmerizing view of the sea will leave you speechless. If you are planning to break the monotony of the routine just try your hands at adventure sports found alongside the palm trees. You should not miss to visit this Sri Lanka tourist place as it is quite popular amongst tourists.<br>
+				<br>
+				Highlights: You can visit Kasgoda Turtle Hatchery and also go on a boat cruise on the Bentota River.<br>
+				<br>
+				Getting there: Bentota is very well connected with the cities and is very easily accessible. You can ride from Galle or you can take a ride from Colombo. Bentota is approximately 101km south of the airport from Colombo
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+		<!-- Modal 10 -->
+  <div class="modal fade 10" id="myModal10" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 10 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>St. Clairs Falls</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				If you are planning to get away from the hustle and bustle of daily life then St, Clair Falls is the perfect option for you. Also, known as the Little Niagara of Sri Lanka this is one of the wildest waterfalls here. It is one of the famous Sri Lanka tourist places visited ample of tourists every year.<br>
+				<br>
+				There are two waterfalls namely Maha Ella " Maha Ella " (Sinhalese "The Greater Fall"), (260 ft) high and "Kuda Ella", (Sinhalese "The Lesser Fall"), which (160 ft) high and located immediately downstream of the main fall. These breath taking waterfalls are located along the Kotmale River.<br>
+				<br>
+				Highlights: This cascading waterfalls falls under one of the six waterfalls affected by the Upper Kotmale Hydropower Project.<br>
+				<br>
+				Location: The St Clair’s Waterfalls are located at Tawalantenne - Talawakele Rd, Sri Lanka<br>
+				<br>
+				Price: Free entry for the waterfalls.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 11 -->
+  <div class="modal fade 11" id="myModal11" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 11 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>International Buddhist Museum</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Located close to the Temple of the Tooth, inside the royal palace complex, The International Buddhist Museum is a complete knowledge base and a showcase of the spread of Buddhism throughout Asia. It is one of the famous religious places to visit in Sri Lanka.<br>
+				<br>
+				There are separate rooms dedicated to different countries illustrating Buddhism in that location. There are photographs, models and gigantic statues which portray the spread and influence of Buddhism on people in various places.<br>
+				<br>
+				Location: Close to Temple of Tooth, Kandy<br>
+				<br>
+				Highlights: To get a better knowledge about the spread of Buddhism displayed here one can opt for a free audio guide which is available at the ticket counter or can opt for a tourist guide at 1070LKR who explains the whole location. Do wear covered clothes from shoulder to toe and remove the shoes. There’s an elevator in the Museum which allows disabled visitors to access the Museum. <br>
+				<br>
+				Time: 8:00 AM to 7:00 PM<br>
+				<br>
+				Price: Approximate price starts from 1070 LKR per adult
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 12 -->
+  <div class="modal fade 12" id="myModal12" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 12 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Mahiyanganaya Sorabora Lake</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Lush greenery, tropical climate and wilderness camping is the key essence of visiting Mahiyanganaya Sorabora Lake. This is a manmade lake believed to be constructed by King Dutugemunu's betel supplier named Bulata. Counted as one of the most incredible places to visit in Sri Lanka.<br>
+				<br>
+				There is a beautiful sluice gate here which is a known to be quite old built in around 162 BC but believed to be still in use.Camping here is a pleasure with unlimited leisure options of fishing and enjoying boat ride on the lake. The scenic extravaganza, especially during the sunrise and sunset time, is simply breathtaking.<br>
+				<br>
+				Highlights: Fish viewing and bird watching<br>
+				<br>
+				Location: Uva Province, Sri Lanka<br>
+				<br>
+				Best Season: Throughout the year
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+			<!-- Modal 13 -->
+  <div class="modal fade 13" id="myModal13" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 13 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Ruwanwelisaya</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				This time while you are in Sri lanka don’t miss a chance to visit the Ruwanwelisaya which is famous for its stunning architectural qualities. Sacred to the Buddhist all over the world this stupa was built by King Dutugemunu. The stupa was an ancient ruin in the 19th century but was later renovated after the fundraising by Sinhalese bhikkhu in the early 20th century.<br>
+				<br>
+				Highlights: Standing tall at an elevation of 338 ft this stupa is one of the world’s tallest monuments. This stupa took 33 years and 3 months to complete.<br>
+				<br>
+				Location: Ruwanwelisaya is located at Abhayawewa Rd, Anuradhapura, Sri Lanka.<br>
+				<br>
+				Price: The entry is free while entering this stupa.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 14 -->
+  <div class="modal fade 14" id="myModal14" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 14 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Polonnaruwa Sacred City</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Just walk into the Golden age by entering the city of Polonnaruwa which is not only its capital but also an ancient kingdom of Sri Lanka too. You will find some of the ancient remains of palaces, shrines and stupa. It is amongst the highly visited Sri Lanka tourist places.<br>
+				Each of these historical remains is blessed with a glorious past of their own.Once you have reached the place it will keep you glued to it that you wouldn’t even realize when time flies by.<br>
+				<br>
+				Location: Approximately a 5 hour drive from Colombo<br>
+				<br>
+				Highlights: You shouldn’t miss the chance to see the statue of Parakramabahu I who had his reign during the golden age. You can also witness a spectacular view of the Lotus Pond with its lotus-shaped petals built on 4 tiers, the majestic view is not supposed to miss.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 15 -->
+  <div class="modal fade 15" id="myModal15" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 15 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Pinnewala Elephant Orphanage</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Peradeniya Gardens is a spacious 147 acre of natural extravaganza consisting of more than 4000 species of plants, and 10,000 varied kinds of trees, incidentally serves as the largest garden in Sri Lanka and is one of the best places to visit in Sri Lanka.<br>
+				<br>
+				The unique and rarest collection in these gardens is the Giant Bamboo of Burma which grows 12 inches each day to a height of 40 meters. Apart from this other amazing collections include Javan fig tree, Cannonball tree, Double Coconut Palm and about 200 other varieties of palm trees and versatile collection of flora.<br>
+				<br>
+				Highlight:  One can pack some food to enjoy an open-air picnic here or can relish the cafeteria inside serving local and western cuisine. The Peradeniya Botanical Garden is one prime tourist attraction of hill country and remains quite flooded with tourists every weekend. <br>
+				<br>
+				Timings: Opened daily from 7:30 AM to 5:00 PM
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+				<!-- Modal 16 -->
+  <div class="modal fade 16" id="myModal16" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 16 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Anuradhapura</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Anuradhapura is one of the world heritage site and the place gained importance only after the coming of the Bodhi tree which is known as the tree of enlightenment. The cutting of this tree was brought to Sri Lanka by Sanghamitta and is also one of the famous places to see in Sri Lanka.<br>
+				<br>
+				The tree is well protected from wild elephants during the reign of King Kirthi Sri Rajasingha. It is one of the popular Sri Lanka tourist places to visit.<br>
+				<br>
+				Highlights: Apart from the Bodhi tree, you can have a look at the Ruwanwelisaya which is one of the magnificent stupas.<br>
+				<br>
+				Best time to visit: April and September.<br>
+				<br>
+				Location: It is approximately hours from Anuradhapura-Padeniya highway.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 17 -->
+  <div class="modal fade 17" id="myModal17" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 17 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Galle Fort</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Even when in Sri Lanka you will feel as if you are in Europe. Get a chance to witness the works of Europeans in Sri Lanka by visiting the Old Town of Galle and its fortifications situated 120 km from Colombo. A perfect amalgamation of European architecture and South Asian traditions. Galle is one of the best places to visit in Sri Lanka<br>
+				<br>
+				The best way to explore this beautiful place is by hiring a bike and wandering the streets of Galle. Best time to visit is January and February which are comparatively drier periods. It is said that the mighty and the strong fortifications which were built around the city of Galle was started by Portuguese and was further developed by Dutch people. It is Galle which is the cultural world heritage site.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 18 -->
+  <div class="modal fade 18" id="myModal18" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 18 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Horton Plains National Park</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Horton National Park is a ‘food for the soul’ kind of mesmerizing locale. The park is perched in the shadows of the country’s 2nd and 3rd highest mountains, Kirigalpota and Totapola. The place is also termed as world’s end due to its undaunting mysterious views of waterfalls, misted lakes and earthy species of flora and fauna. The national park is actually a plateau and is 2000m high. It is better to start early in the morning to witness this heavenly place.<br>
+				<br>
+				Location: 11 kms approx from Ohiya.<br>
+				<br>
+				Highlights: An array of wildlife such as Samba deers, leopards, wild boars, purple faced langoor; an ideal site for birdwatchers as you may encounter a variety of flying wonders such as bulbul, Ceylon blackbird, Ceylon white eyed arrenga, mountain hawk etc; the epic walk to world’s end(4kms) and Farr Inn hunting lodge.<br>
+				<br>
+				Price: Adult – 1895 LKR Child: 1011LKR.<br>
+				<br>
+				Timings: 6 am to 6 pm
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+					<!-- Modal 19 -->
+  <div class="modal fade 19" id="myModal19" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 19 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Dehiwala Zoo</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Dehiwala Zoo or the National Zoological Gardens of Sri Lanka was set up during 1936 with the sole ambition of providing ultimate protection to a wide range of wild animals and birds.<br>
+			
+			When you are here, do not miss the impressive performances from elephants, chimpanzees and sea lions. It is one of the most amazing places to visit in Sri Lanka.<br>
+			<br>
+			Location: This zoo is located at Anagarika Dharmapala Mawatha, Dehiwala.<br>
+			<br>
+			Highlights: This place is one of the members of WAZA (World Association of Zoos and Aquariums). In order to encourage breeding, this zoo is actively involved in animal exchange programs. The place is known for its exotic varieties of mammals, birds, fishes, reptiles, amphibians, butterflies and marine invertebrates<br>
+			<br>
+			Timings: The zoo is open from 8.30 AM to 6:00 PM on all days. <br>
+			<br>
+			Price: Approximate price starts from 100 LKR for adult and 30 LKR for child, for foreigners 500 LKR for adults and 250 LKR for child.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 20 -->
+  <div class="modal fade 20" id="myModal20" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 20 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Bambarakanda Falls</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Mark it on your bucket list to visit this one of the most tranquil place while you are in Sri Lanka. With a sheer drop of waterfall from a height of 263 meters Bambarakanda Falls is one of the highest waterfalls in Sri Lanka. The dazzling waterfall lies in the Badulla District among evergreen forest in the Kalupahana Area.<br>
+			<br>
+			Highlights: The fall is framed by the Uduweriya Haputale Mountain and Kuda Oya, a tributary of Walawe River.<br>
+			<br>
+			Location: The Bambarakanda Falls is located at Kalupahana - Ohiya Rd, Sri Lanka<br>
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 21 -->
+  <div class="modal fade 21" id="myModal21" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 21 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Stroll Dutch Reformed Church</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				One of the finest and most traditional Tourist attractions in Galle which is worth to visit and admire is the Galle Fort. The Dutch Reformed Church is the ancient building located in the premises of the fort. The building’s date goes back the 18th century during the Dutch period.<br>
+				
+				A walk through the Fort ground along with the humble caretaker, immersing in his never-ending fancy stories will take you back to the era whence it was built. The Church is also known as Groot Kert.<br>
+				<br>
+				Location: Church Street, Galle fort<br>
+				<br>
+				Highlights: Many tombstones dating back to the 17th can be observed; this church also is a Cruciform with shorter transepts separated by two arches. The floor is marked with gravestones. The beautiful pulpit made from Malaysian wood, calamander is a beautiful sight and near to the pulpit is the memorial of De Ly Family.<br>
+				<br>
+				Timings: 9 am to 5 Pm<br>
+				<br>
+				Best Time to visit: The best month to visit this place in February
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+		<!-- Modal 22 -->
+  <div class="modal fade 22" id="myModal22" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 22 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Attidiya Bird Sanctuary</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				This is probably the only place in Colombo that provides shelter to at least 50 different species of birds (both local and migratory).<br>
+				<br>
+				Highlights: A large number of water monitors, butterflies, insects and other birds tend to catch your attention as you walk through the muddy paths of the sanctuary. The biodiversity of this place is highly commendable, as you cannot help but feel awe-struck at the diverse species of birds here. As the place is replete with mosquitoes, you need to be fully covered while visiting the park. <br>
+				<br>
+				Location: The sanctuary is located at Boralesgamuwa in Colombo. <br>
+				<br>
+				Timings: The sanctuary is open all through the day; however early mornings and evenings are best to visit migratory birds. <br>
+				<br>
+				Best Season to Visit: You must visit this place during the months between December and January, as this is the peak season for migratory birds to seek protection here. <br>
+				<br>
+				Price: Entry to the place is free of cost.
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 23 -->
+  <div class="modal fade 23" id="myModal23" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 23 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Udawalawe National Park</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				You will be surrounded by herds of elephants once you reach Udawalawe National Park. The amazing jungle backdrop which this National Park provides will leave you totally mesmerized and will bring you much closer to nature.<br>
+
+				This National Park was an attempt to protect the wild animals who were displaced because of the construction of the Udawalawe reservoir. It is one of the must-visit places in Sri Lanka.<br>
+				<br>
+				Location: South East of Colombo.<br>
+				<br>
+				Highlights: Elephant Transit Home which is the elephant orphanage which has housed 25 baby elephants who have lost their parents. Pinnewala is the spot where you can spot elephants quite closely because usually, elephants are bottle fed there.<br>
+				<br>
+				Best time to visit: July and August
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 24 -->
+  <div class="modal fade 24" id="myModal24" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 24 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Gangaramaya Temple</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Gangaramaya Temple is not only one of the most beautiful but also one of the most iconic Buddhist temples in Sri Lanka. It is more than a century since this temple was constructed; however even today, the temple doesn’t stop to surprise tourists and devotees and is therefore one of the best tourist places in Colombo.<br>
+				
+				The pathways and doors that lead into the main sanctum sanctorum contain intricately carved sculptures that are simply breath-taking. <br>
+				<br>
+				Highlights: The ceilings and walls contain pictures and miniature paintings that explain stories from Buddhism religion. In the main sanctorum, a huge Buddha statue exudes a brilliant sense of calmness in the devotees. Built in a mix of various architectural styles including India, Burmese, Thai and Chinese, this temple also houses a museum.<br> 
+				<br>
+				Location: The temple is located right on the Jinaratana Road in the heart of Colombo city. <br>
+				<br>
+				Timings: The temple is open from 5.30AM to 10PM. <br>
+				<br>
+				Price: Entry fee is LKR200 per adult.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	
+			<!-- Modal 25 -->
+  <div class="modal fade 25" id="myModal25" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 25 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>National Museum of Colombo</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			If you are a history lover and have a keen eye for architecture, the National Museum is probably one of the first few places to visit in Colombo.<br>
+			
+			Established during 1877, this is the biggest museum in the island nation and is undoubtedly the pride of Sri Lanka. The place houses some of the best and personalised collections of the ancient Kandyan dynasty rulers.<br>
+			<br>
+			Location: The museum built in Italian architecture style, is located right in the heart of the Colombo city. <br>
+			<br>
+			Highlights: The museum’s library deserves special mention as it contains rich manuscripts in palm leaves in languages like Burmese, Sinhala, Telugu, Tamil and much more. <br>
+			<br>
+			Timings: The museum is open on all days except national holidays from 9:00 AM to 6:00 PM. <br>
+			<br>
+			Price:  Approximate price for local adults and kids are 35 LKR and 20 LKR respectively, whereas, for foreign adults and kids, the prices are 600 LKR and 300 LKR respectively
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 26 -->
+  <div class="modal fade 26" id="myModal26" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 26 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Sri Lanka Cricket Museum</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Situated at Maitland Place, Colombo, this museum is popular for displaying the entire history of Sri Lanka's cricket. One can spot the many trophies won in the World Cup and T20 competitions.<br>
+				<br>
+				Highlights:  A ‘Hall of Fame’ which displays the names of Sri Lanka’s test players.
+				Displays the significant moments of Sri Lanka's cricketing history.<br>
+				<br>
+				Timings: 9 am - 5 pm<br>
+				<br>
+				Entry fee: 
+				Non – Residents
+				Adults-LKR 500
+				Children – LKR 300
+				Adults – LKR 100
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 27 -->
+  <div class="modal fade 27" id="myModal27" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 27 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Viharamahadevi Park</h4>
+			
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Named after Queen Viharamahadevi, this park is the largest and probably the only public park and one of the best places to visit in Colombo. It is one of those places that never cease to excite you irrespective of the number of times you come here.<br> 
+				<br>
+				Highlights: There are lots of places to visit here like the aquarium, mini zoo, children’s play zone, war memorial, lake and the dangerous-yet-adventurous suspension bridge above it. When you and your kids are tired of running round the park, you can just relax on the cool resting places on the park, eating local delicacies like candy floss, corn and ice-creams from the sellers here. A canopy of green trees lends a beautiful ambience to this place. <br>
+				<br>
+				Location: The Park is located right next to the famous National Museum in the heart of Colombo.<br> 
+				<br>
+				Timings: This Park is open all through the year. 
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+				<!-- Modal 28 -->
+  <div class="modal fade 28" id="myModal28" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 28 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Independence Memorial Hall</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Independence Memorial Hall in Colombo, as the name indicates, was constructed to commemorate the occasion of Sri Lankan Independence from British Rule. The construction of this memorial was completed during 1953.<br>
+				<br>
+				Highlights: When you come here, you ought to visit the Independence Memorial Museum as well, which honours the people who fought for Sri Lankan Independence. Currently, this hall is the venue where Independence Day celebrations and other national events are being held. <br>
+				<br>
+				Prior to the construction of the Sri Lankan Parliament, this Memorial Hall served as the ceremonial assembly as well. This place currently caters to the needs of fitness enthusiasts as the open spaces here are used for jogging, cycling, public gym, aerobic sessions and other relevant activities. <br>
+				<br>
+				Location: The hall is located in Cinnamon Gardens and was formerly known as Torrington Square. <br>
+				<br>
+				Timings: This hall is open all through the year. 
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 29 -->
+  <div class="modal fade 29" id="myModal29" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 29 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Kandy Lake</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				Kandy Lake is an artificial lake built by King Sri Wickrama Rajasinghe in 1807. The lake, also called Kiri Muhuda or Sea of the Milk, is situated in the heart of the Kandy city. It covers an area of 6,544 sq. m. with a circumference of 3.21 km. The lake boasts of a small island at its center. A building, together with some earliest ruins is also located at the center of the lake.<br>
+			
+				The iconic serene lake is one of the greatest attractions for visitors for its lush green settings and pristine blue waters. It has several rest zones, where tourists can sit, breathe fresh air, and catch the glimpse of scenic beauty around them. Nature lovers and tourists can enjoy the picturesque surroundings and soothe their jittery nerves by taking a stroll around the 2.1 km pathway.<br>
+
+				People generally stroll or jog the pathway in the evening, when the mercury drops considerably. It presents a beautiful sight at night. The palm trees in the middle of the lake add charm to the entire surroundings. Tourists can opt for boat rides and relish the experience.<br>
+
+				One can hire the boat either for their party or join other passengers for a ride. The boat ride costs approximately Rs. 1500 to Rs. 2000 for a 20-minute boating experience around the Lake. Visitors can look forward to gratifying their senses, by buying products ranging from balloons to cashew nuts from vendors roaming around the lake.<br>
+
+				Owing to the pollution and other factors, which led to shrinkage of the lake, the management has declared it as a protected area and banned fishing at this spot. However, animal lovers and ornithologists can revel in watching birds, fishes, and huge monitor lizards.<br>
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 30 -->
+  <div class="modal fade 30" id="myModal30" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 30 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Red Mosque</h4>
+			
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+				In the heart of Pettah, the decorative 1909 Jami-Ul-Alfar Mosque is a show-stopper with its candy-striped red-and-white brickwork. Guards will usually let you in for a look, except during peak prayer times on Friday (women may be denied entrance at other times as well). Afterwards have a coffee at one of the Halal cafes across the way.
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+</div>
+	
+
+
+
+
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+	
+			<p class="copyright">Copyright 2021 - Footsteps</p>
+</footer>
+	
+	
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
+

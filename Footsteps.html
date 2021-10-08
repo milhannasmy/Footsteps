@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!------------------------ Code of Footsteps ------------------------>
+	
+  <title>Footsteps</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+
+
+<!---------------------- Footsteps | CSS Style ----------------------->
+	
+  <style>
+  body {
+    font: 400 15px/1.8 Lato, sans-serif;
+    color: #777;
+  }
+  h3, h4 {
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+  }
+  .container {
+    padding: 80px 120px;
+  }
+  .carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); 
+    width: 100%;
+    margin: auto;
+  }
+  .carousel-caption h3 {
+    color: #fff !important;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+  }
+  .bg-1 h3 {color: #fff;}
+	  
+  .list-group-item:first-child {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+  }
+   .nav-tabs li a {
+    color: #777;
+  }
+  .modal-header, h4, .close {
+    background-color: #333;
+    color: #fff ;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-header, .modal-body {
+    padding: 40px 50px;
+  }
+  
+  .navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+    color: #fff !important;
+  }
+  .navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+  .open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+    color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+    background-color: red !important;
+  }
+  footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+  }
+  footer a {
+    color: #f5f5f5;
+  }
+  footer a:hover {
+    color: #777;
+    text-decoration: none;
+  }  
+  .form-control {
+    border-radius: 0;
+  }
+  textarea {
+    resize: none;
+  }
+  .modalstyle{
+		color: #000000;
+	    font-style: normal;
+		
+	}
+  </style>
+</head>
+	
+<!---------------------- Footsteps | HTML Code ----------------------->
+		
+	
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">FOOTSTEPS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#featured">FEATURED</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+		<li><a href="Destinations.html">DESTINATIONS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="Images/Nine Arch.jpg" alt="Nine Arch" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Nine Arch</h3>
+          <p>The atmosphere in Nine Arch is soulful!</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="Images/Sigiriya.jpg" alt="Sigiriya" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Sigiriya</h3>
+          <p>Rock of ancestors!</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="Images/Arugam Bay.jpg" alt="Arugam Bay" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>Arugam Bay</h3>
+          <p>Sri Lanks's most famous surfing beach!</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The About Section) -->
+<div id="about" class="container text-center">
+  <br>
+  <h3>ABOUT | GET STARTED</h3>
+  <p><em>We love travelling!</em></p>
+  <p>Sri Lanka is one of the world's most popular tourist destinations. To express the richness, beauty and the intensity of affection : the visitors addressed the country as Serendib, Ceylon, Teardrop of India, Resplendent Isle, Island of Dharma, and Pearl of the Orient. It is also a land of staggering contrast and spectacular beauty due to its compactness. Along the coast, visitors can explore amazing beaches, safari tours, guided walks through ancient cities, experience the culture and bit of modern Sri Lanka. We welcome you to find your unique Sri Lankan travel experience. So, we've created a website for all travellers around Sri Lanka that is extremely useful. The most famous destinations will be shown with the most important information. It will only take minutes for you to explore the serenity of Mother Lanka.<br>We are passionate about travel and sharing Island's wonders with you.</p>
+  <br>
+  <p>Visit us and make your travelling easy!</p>
+  <br>
+    <a href="Destinations.html" class="btn btn-outline-light text-dark" role="button">Get Started</a>
+
+</div>
+
+<!-- Container (FEATURED Section) -->
+<div id="featured" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">FEATURED</h3>
+    <p class="text-center"><em>Footsteps will suggest you some tours<br> Remember to check us daily!</em></p>
+	<br>
+ 
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Elephant-Final.jpg" alt="Elephant" width="400" height="300">
+			<p><strong>Forest Roams</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal1">Check</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Beach-Final.jpg" alt="Beach" width="400" height="300">
+          <p><strong>Beach Holidays</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal2">Check</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="Images/Mountain-Final.jpg" alt="Mountain" width="400" height="300">
+          <p><strong>Mountain Holidays</strong></p>
+          <button class="btn" data-toggle="modal" data-target="#myModal3">Check</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 1 -->
+  <div class="modal fade 1" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 1 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Yala National Park</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Yala combines a strict nature reserve with a national park. Divided into 5 blocks, the park has a protected area of nearly 130,000 hectares of land consisting of light forests, scrubs, grasslands, tanks and lagoons. Two blocks are currently opened to the public.<br>
+
+			Situated in Sri Lanka’s south-east hugging the panoramic Indian Ocean, Yala was designated a wildlife sanctuary in 1900 and was designated a national park in 1938. Ironically, the park was initially used as a hunting ground for the elite under British rule. Yala is home to 44 varieties of mammal and 215 bird species. Among its more famous residents are the world’s biggest concentration of leopards.<br>
+			<br>
+			Area: 378 sq miles<br>
+			Location: 260km South East of Colombo<br>
+			Entry points: Gate 1 - Katagamuwa | Gate - 2 Palatupana | Gate 3 and 4 - Galge<br>
+			Average Temp: 26.4 °C (79.5 °F)<br>
+			Climate: Dry most of the year<br>
+			Nearest city: Kataragama<br>
+			Best time to visit: June to September<br>
+			Head office: Open from 9am to 6pm<br>
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+	<!-- Modal 2 -->
+  <div class="modal fade 2" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 2 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Hikkaduwa Beach</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			Hikkaduwa is the name of a small town which is located on the south coast of Sri lank around 98 KM on the south of Colombo. It is well known for the Hikkaduwa beach which is labeled as one of the best surfing site in Sri Lanka and for Hikkaduwa Coral Sanctuary which is located a few meters away from the shore.<br>
+
+			<br>
+				<b>Hikkaduwa Beach and Surfing:</b><br>
+			<br>
+				
+			Hikkaduwa Beach and Surfing Hikkaduwa beach is one of the most popular tourist places in Sri lanka Known for the harmonized and calm environment. The Beach is considered to be one of the finest places in the country for surfing and it is also well known for seafood currie which gives an extraordinary touch while having the perfect day on the beach. You can enjoy Surfing to the fullest in the months of November to March when waves rise up. Many tourists have recommended surfing in these months.<br>
+			
+				
+			<br>
+				<b>Hikkaduwa Coral Sanctuary and Snorkeling</b><br>
+			<br>
+				
+			While enjoying the beach and the sea, it is necessary to have a look inside the sea to investigate and examine the aquatic life. Whoever has visited the Beach has highly recommended snorkeling. It is very much suitable if one wants to watch all the beautiful fishes and marine life closely. People get a chance to look at a lot of different types of small and big fishes and turtles etc. very closely. So, whenever you get the chance to visit Sri Lanka and especially Hikkaduwa beach, don’t forget to experience surfing as well as snorkeling, it will be an experience of a life time.<br>
+			<br>
+			Province: Southern Province<br>
+			District: Galle District<br>
+			Weather: 31 °C
+			</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+	
+		<!-- Modal 3 -->
+  <div class="modal fade 3" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal 3 content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4>Hanthana Mountain</h4>
+        </div>
+        <div class="modal-body">
+			<p class="modalstyle">
+			The Hanthana mountain range in Kandy is popular among those who like to go hiking, camping, bird watching and be close to nature in any way. Local songwriters, too, have lyricised the scenic beauty and tranquility of these mountains.<br>
+			
+			<br>
+			Located 1240 m above sea level, the Hanthana mountain range stretches all the way from the Kandy city to the town of Galaha, 20 km south. The freshwater springs on the western end of Hanthana feed the waters of the Mahaweli river, and the tributaries of the river separate the individual hills of the range.<br>
+			
+			<br>
+			In total, there are seven individual peaks, the highest being Ura kanda. The peaks offer spectacular views of Kandy city, the Knuckles range, the dolosbage range of Aranayake, and the hills of the Sabaragamuwa region, too, can be spotted from the heights of these hills.<br>
+			<br>
+			Aside from beautiful scenery and a breathtaking panorama from its peaks, Hanthana is a favourite travel spot for many people because it is easy to explore. It is possible to reach the foot of the mountain range via the Peradeniya-Galaha road or the Kandy-Udawela road.<br>
+			<br>
+			The mountain range, which is most often hidden by mist, is favoured by local university students who know it better by the name adara kanda (mountain of love). Every year, university students from around the country make it a point to visit this mountain range.
+			<br>
+			<br>
+			The Peradeniya University itself is nestled on the lower slopes of the Hanthana mountain range, on a 1,080 acre stretch of land. One of the best places to visit while trekking through the hills of Hanthana is the Hanthana viharaya, which dates back to the days of the Kandyan Kingdom. Located 10 km away from Kandy City, it is the temple situated on the highest elevation in Kandy.<br>
+			<br>
+			A 500 acre plantation of pine trees belonging to the Department of Wildlife Conservation, and several forest areas close to the Ura Kanda peak, are some of the other sights which can be seen on a trip to these hills.<br>
+			<br>
+			
+			Location: Central Province, Sri Lanka<br>
+			Nearest City: Kandy<br>
+			Coordinates: 7°15′31″N 80°37′43″<br>
+			ECoordinates: 7°15′31″N 80°37′43″E<br>
+			Established: 2010
+			</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+	
+
+
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our visitors!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Love our website? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Colombo, Sri Lanka</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +94 768460150</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: milhannasmy21@gmail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+	  
+			  <button type="button" onclick="loadDoc()">Request data</button>
+
+		<p id="demo"></p>
+
+
+		<script>
+		function loadDoc() {
+		  var xhttp = new XMLHttpRequest();
+		  xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			  document.getElementById("demo").innerHTML = this.responseText;
+			}
+		  };
+		  xhttp.open("GET", "sentence.txt", true);
+		  xhttp.send();
+		}
+		</script>
+	  
+	</div>
+
+</div>
+
+
+<!----------------------- Footer Code ------------------------------>
+	
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+	
+			<p class="copyright">Copyright 2021 - Footsteps</p>
+</footer>
+
+	
+<!----------------------- Jquery ------------------------------>
+	
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+
+</body>
+</html>
+
