@@ -172,6 +172,7 @@
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#featured">FEATURED</a></li>
+	<li><a href="#featured">PLACES</a></li>
         <li><a href="#contact">CONTACT</a></li>
 		<li><a href="Destinations.html">DESTINATIONS</a></li>
       </ul>
@@ -346,7 +347,7 @@
       <!-- Modal 3 content-->
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal" onclick="closeClick()">×</button>
           <h4>Hanthana Mountain</h4>
         </div>
         <div class="modal-body">
@@ -452,6 +453,11 @@
 <!----------------------- Jquery ------------------------------>
 	
 <script>
+
+const closeClick = () => {
+  console.log("Implement close functionality here ");
+}
+
 $(document).ready(function(){
   // Initialize Tooltip
   $('[data-toggle="tooltip"]').tooltip(); 
